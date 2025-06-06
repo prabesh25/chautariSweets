@@ -2,17 +2,6 @@ import React from "react";
 
 const VidSection = () => {
   return (
-    // <section className="px-4 py-8 ">
-    //   <div className="text-center mb-8">
-    //     <h4 className="text-lg font-bold mb-2">Taste the legacy today!</h4>
-    //     <p className="text-gray-600">
-    //       Since 1948, our Indian brand has been delighting customers with exquisite mithai, spice powders, namkeens, and tangy pickles.
-    //     </p>
-    //   </div>
-
-    //   {/* Scrollable container */}
-    //
-    // </section>
     <section className="px-4 py-8">
       <div className="text-center mb-8">
         <h4 className="text-lg font-bold mb-2">Taste the legacy today!</h4>
