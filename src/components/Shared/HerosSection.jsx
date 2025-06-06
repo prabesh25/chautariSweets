@@ -3,14 +3,12 @@ const HerosSection = () => {
   return (
     <div>
     <div className="relative w-full p-4 min-h-[550px] bg-emerald-300">
-      {/* Full-width background image */}
       <img
         className="absolute inset-0 w-full h-full object-cover"
         src="/images/heroImg.png"
         alt="Traditional Namkeen"
       />
 
-      {/* Text overlay - left middle */}
       <div className="absolute inset-0 flex items-center">
         <div className="container mx-auto px-6">
           <div className="max-w-md text-white">
