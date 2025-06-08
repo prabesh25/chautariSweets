@@ -120,9 +120,7 @@
 
 // export default TraditionsSection;
 
-
 import React from 'react';
-
 const TraditionsSection = () => {
   const traditions = [
     {
