@@ -9,6 +9,7 @@ import ExploreSection from "./components/others/ExploreSection";
 import BestsellerSection from "./components/others/BestSellerSelection";
 import TraditionsSection from "./components/others/TraditionSection";
 import HerosSection from "./components/Shared/HerosSection";
+import BlogSection from "./components/others/Blogs";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,6 +23,7 @@ function App() {
       <BestsellerSection/>
       <TraditionsSection/>
       <HerosSection/>
+      <BlogSection/>
     </>
   );
 }
