@@ -94,8 +94,6 @@
 
 // export default BestsellerSection;
 
-
-
 import React, { useRef } from 'react';
 
 const BestsellerSection = () => {
