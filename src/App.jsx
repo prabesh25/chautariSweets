@@ -1,32 +1,29 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./index.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Layout/Navbar";
-import HeroSection from "./components/Home/HeroSection";
-import VidSection from "./components/others/VidSection";
-import ExploreSection from "./components/others/ExploreSection";
-import BestsellerSection from "./components/others/BestSellerSelection";
-import TraditionsSection from "./components/others/TraditionSection";
-import HerosSection from "./components/Shared/HerosSection";
-import BlogSection from "./components/others/Blogs";
 import Footer from "./components/others/Footer";
+import HomePage from "./components/pages/HomePage";
+import Gifting from "./components/pages/Gifting";
+import OurStory from "./components/pages/OurStory";
+import MyAccount from "./components/pages/MyAccount";
+import Shop from "./components/pages/Shop";
+import ContactUs from "./components/pages/ContactUs";
+import SugarFreeSweets from "./components/pages/shopping/SugarFreeSweets";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
-      <HeroSection/>
-      <VidSection/>
-      <ExploreSection/>
-      <BestsellerSection/>
-      <TraditionsSection/>
-      <HerosSection/>
-      <BlogSection/>
-      <Footer/>
-    </>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/gifting" element={<Gifting />} />
+        <Route path="/my account" element={<MyAccount />} />
+        <Route path="/our story" element={<OurStory />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/shop/sugarfreesweets" element={<SugarFreeSweets />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 

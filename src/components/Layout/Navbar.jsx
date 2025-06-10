@@ -1,6 +1,6 @@
-
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,9 +11,17 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20">
           {/* Left Links */}
           <div className="hidden md:flex space-x-6 text-sm font-medium text-gray-800">
-            <div className="flex items-center cursor-pointer">
+            {/* <div className="flex items-center cursor-pointer">
               SHOP <span className="ml-1">▼</span>
-            </div>
+            </div> */}
+            <Link
+              to="/shop"
+              className="flex items-center cursor-pointer text-gray-800 hover:text-gray-600"
+              onClick={() => setMenuOpen(false)} // to close mobile menu if open
+            >
+              SHOP <span className="ml-1">▼</span>
+            </Link>
+
             <div className="flex items-center cursor-pointer">
               LOCAL ORDERS <span className="ml-1">▼</span>
             </div>
@@ -23,7 +31,7 @@ export default function Navbar() {
           {/* Center Logo Image */}
           <div className="flex justify-center items-center">
             <img
-              src="images/mainLogo.png" // <-- replace with your actual logo image path
+              src="/images/mainLogo.png" // <-- replace with your actual logo image path
               alt="chautari sweets Logo"
               className="w-18  object-contain"
             />
@@ -55,7 +63,11 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
             <button onClick={() => setMenuOpen(!menuOpen)}>
-              {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {menuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </button>
           </div>
         </div>
@@ -98,7 +110,3 @@ export default function Navbar() {
     </header>
   );
 }
-
-
-
-
