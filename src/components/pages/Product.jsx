@@ -52,6 +52,7 @@ const Product = () => {
       scrollRef.current.scrollBy({ left: 300, behavior: 'smooth' });
     }
   };
+  
   return (
         <div>
     <div className="flex flex-col md:flex-row p-4 md:p-8">
