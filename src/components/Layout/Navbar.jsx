@@ -23,7 +23,7 @@ export default function Navbar() {
             </Link>
 
             <div className="flex items-center cursor-pointer">
-              LOCAL ORDERS <span className="ml-1">▼</span>
+              Bulk Buying <span className="ml-1">▼</span>
             </div>
             <span className="cursor-pointer">GIFTING</span>
           </div>

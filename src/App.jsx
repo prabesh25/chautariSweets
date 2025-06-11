@@ -8,6 +8,8 @@ import MyAccount from "./components/pages/MyAccount";
 import Shop from "./components/pages/Shop";
 import ContactUs from "./components/pages/ContactUs";
 import SugarFreeSweets from "./components/pages/shopping/SugarFreeSweets";
+import Product from "./components/pages/Product";
+import BulkOrderForm from "./components/pages/Form";
 
 function App() {
   return (
@@ -18,6 +20,9 @@ function App() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/gifting" element={<Gifting />} />
         <Route path="/my account" element={<MyAccount />} />
+        <Route path="/product" element={<Product />} />
+                <Route path="/form" element={<BulkOrderForm />} />
+
         <Route path="/our story" element={<OurStory />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/shop/sugarfreesweets" element={<SugarFreeSweets />} />

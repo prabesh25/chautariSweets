@@ -16,35 +16,35 @@ const VidSection = () => {
           <div className="flex no-scrollbar overflow-x-auto space-x-4 pb-4">
             <video
               className="w-60 h-80 flex-shrink-0 rounded-lg border object-cover"
-              src="/videos/v1.mp4"
+              src="/videos/vid1.mp4"
               autoPlay
               muted
               loop
             />
             <video
               className="w-60 h-80 flex-shrink-0 rounded-lg border object-cover"
-              src="/videos/v2.mp4"
+              src="/videos/vid1.mp4"
               autoPlay
               muted
               loop
             />
             <video
               className="w-60 h-80 flex-shrink-0 rounded-lg border object-cover"
-              src="/videos/v3.mp4"
+              src="/videos/vid1.mp4"
               autoPlay
               muted
               loop
             />
             <video
               className="w-60 h-80 flex-shrink-0 rounded-lg border object-cover"
-              src="/videos/v4.mp4"
+              src="/videos/vid1.mp4"
               autoPlay
               muted
               loop
             />
             <video
               className="w-60 h-80 flex-shrink-0 rounded-lg border object-cover"
-              src="/videos/v5.mp4"
+              src="/videos/vid1.mp4"
               autoPlay
               muted
               loop
