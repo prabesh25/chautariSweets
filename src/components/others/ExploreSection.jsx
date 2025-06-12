@@ -124,9 +124,9 @@ import React from "react";
 
 const ExploreSection = () => {
   const exploreItems = [
-    { image: "/images/0102.png", name: "item1" },
-    { image: "/images/0103.png", name: "item2" },
-    { image: "/images/0105.png", name: "item3" },
+    { image: "/images/01.jpg", name: "item1" },
+    { image: "/images/02.png", name: "item2" },
+    { image: "/images/03.png", name: "item3" },
     { image: "/images/0107.png", name: "item4" },
   ];
 

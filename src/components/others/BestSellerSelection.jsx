@@ -104,25 +104,25 @@ const BestsellerSection = () => {
       name: "Assorted", 
       price: "₹470.00",
       rating: "4.3",
-      image: "/images/0102.png" 
+      image: "/images/07.png" 
     },
     { 
       name: "Tomato Pickle Pouch", 
       price: "₹370.00",
       rating: "4.3",
-      image: "/images/0103.png" 
+      image: "/images/02.png" 
     },
     { 
       name: "Assorted Pootharekulu", 
       price: "₹500.00",
       rating: "4.3",
-      image: "/images/0105.png" 
+      image: "/images/03.png" 
     },
     { 
       name: "Soan Papdi", 
       price: "₹440.00",
       rating: "4.3",
-      image: "/images/0106.png" 
+      image: "/images/04.png" 
     },
   ];
 
