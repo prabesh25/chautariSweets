@@ -41,7 +41,7 @@ function App() {
         <Route path="/shop/festive" element={<Festive />} />
         {/* <Route path="/shop/gultenfree" element={< GultenFree/>} /> */}
         <Route path="/shop/badamkatli" element={<BadamKatli />} />
-                <Route path="/shop/gultenfree" element={<GultenFree />} />
+        <Route path="/shop/gultenfree" element={<GultenFree />} />
 
         {/* <Route path="/shop/gultenfree" element={<GultenFree />} /> */}
         <Route path="/shop/newarrival" element={<NewArrival />} />
