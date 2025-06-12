@@ -7,8 +7,8 @@ export default function Navbar() {
 
   return (
     <header className="bg-[#fefaf6] shadow-sm sticky top-0 z-50">
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+      <nav className="mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between  items-center h-20">
           {/* Left Links */}
           <div className="hidden md:flex space-x-6 text-sm font-medium text-gray-800">
             {/* <div className="flex items-center cursor-pointer">

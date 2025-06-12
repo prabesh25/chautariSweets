@@ -104,25 +104,25 @@ const BestsellerSection = () => {
       name: "Assorted", 
       price: "₹470.00",
       rating: "4.3",
-      image: "/images/assorted.jpg" 
+      image: "/images/0102.png" 
     },
     { 
       name: "Tomato Pickle Pouch", 
       price: "₹370.00",
       rating: "4.3",
-      image: "/images/tomato-pickle.jpg" 
+      image: "/images/0103.png" 
     },
     { 
       name: "Assorted Pootharekulu", 
       price: "₹500.00",
       rating: "4.3",
-      image: "/images/pootharekulu.jpg" 
+      image: "/images/0105.png" 
     },
     { 
       name: "Soan Papdi", 
       price: "₹440.00",
       rating: "4.3",
-      image: "/images/soan-papdi.jpg" 
+      image: "/images/0106.png" 
     },
   ];
 
@@ -138,7 +138,7 @@ const BestsellerSection = () => {
       <div className="max-w-6xl mx-auto">
         {/* Header with title and buttons - exactly matching the image */}
         <div className="flex justify-between items-center mb-6">
-          <h2 className="text-2xl md:text-3xl font-bold">Our Bestseller</h2>
+          <h2 className="text-2xl md:text-3xl text-gray-600 font-bold">Our Bestseller</h2>
           <div className="flex space-x-2">
             <button 
               onClick={() => scroll('left')}

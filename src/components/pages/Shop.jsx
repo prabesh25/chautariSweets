@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'; // For navigation
 
 const menuItems = [
   { id: 1, name: 'SugarFreeSweets', image: '/images/01.jpg', path: '/shop/sugarfreesweets' },
-  { id: 2, name: 'Special Items', image: '/images/special.jpg', path: '/special' },
+  { id: 2, name: 'Special Items', image: '/images/02.png', path: '/special' },
   { id: 3, name: 'Dry Fruits', image: '/images/dryfruits.jpg', path: '/dryfruits' },
   { id: 4, name: 'Traditional', image: '/images/traditional.jpg', path: '/traditional' },
   { id: 5, name: 'New Arrival', image: '/images/newarrival.jpg', path: '/newarrival' },
@@ -11,6 +11,7 @@ const menuItems = [
   { id: 7, name: 'Gluten Free', image: '/images/glutenfree.jpg', path: '/glutenfree' },
   { id: 8, name: 'Sugar Free', image: '/images/sugarfree.jpg', path: '/sugarfree' },
 ];
+
 
 const Shop = () => {
   const navigate = useNavigate();

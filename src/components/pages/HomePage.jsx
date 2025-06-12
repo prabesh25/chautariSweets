@@ -7,6 +7,7 @@ import HerosSection from "../Shared/HerosSection";
 import BlogSection from "../others/Blogs";
 import Product from "./Product";
 import ProductAttributes from "../others/ProductAttributes";
+import Journey from "./Journey";
 
 function HomePage() {
   return (
@@ -18,8 +19,8 @@ function HomePage() {
       <ExploreSection />
       <BestsellerSection />
       <TraditionsSection />
-      <HerosSection />
-      <BlogSection />
+      <Journey />
+      {/* <BlogSection /> */}
     </>
   );
 }
