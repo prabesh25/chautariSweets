@@ -47,7 +47,7 @@ const products = [
   },
 ];
 
-const Traditional = () => {
+const BadamKatli = () => {
   return (
     <div className="w-full overflow-hidden">
       {/* Changed from absolute to inline-block and removed positioning */}
@@ -89,4 +89,4 @@ const Traditional = () => {
   );
 };
 
-export default Traditional;
+export default BadamKatli;

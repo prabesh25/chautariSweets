@@ -198,7 +198,7 @@ const Shop = () => {
     { id: 5, name: 'New Arrival', image: '/images/05.png', path: '/shop/newarrival' },
     { id: 6, name: 'Festive', image: '/images/06.png', path: '/shop/festive' },
     { id: 7, name: 'Gluten Free', image: '/images/07.png', path: '/shop/glutenfree' },
-    { id: 8, name: 'Sugar Free', image: '/images/08.png', path: '/shop/sugarfree' },
+    { id: 8, name: 'Badam Katli', image: '/images/08.png', path: '/shop/badamkatli' },
   ];
 
   const nextProduct = () => {
