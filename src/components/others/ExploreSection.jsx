@@ -13,11 +13,9 @@ const ExploreSection = () => {
     <div className="w-full flex flex-col items-center px-4 py-8">
       {/* Centered heading content */}
       <div className="w-full max-w-2xl text-center mb-8">
-        <h4 className="text-lg font-bold mb-2">Taste the legacy today!</h4>
+        <h4 className="text-lg text-gray-600 mb-2">A Sweet Tradition collections</h4>
         <p className="text-gray-600">
-          Since 1948, our Indian brand has been delighting customers with
-          exquisite mithai, spice powders, namkeens, and tangy pickles.
-        </p>
+         Exquisitely packaged to benefit every occasion, we celebrate your pride, happiness and relationships with absolute grandeur.</p>
       </div>
 
       {/* Centered scrollable container */}
