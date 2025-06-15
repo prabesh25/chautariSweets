@@ -6,41 +6,41 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-[#fefaf6] shadow-sm sticky top-0 z-50">
+    <header className="bg-[#fefaf6] w-full h-25 shadow-sm sticky top-0 z-50">
       <nav className="mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between  items-center h-20">
+        <div className="flex justify-between  items-center h-25">
           {/* Left Links */}
-          <div className="hidden md:flex space-x-6 text-sm font-medium text-gray-800">
+          <div className="hidden md:flex  space-x-6 text-[17px] font-medium text-gray-800">
             {/* <div className="flex items-center cursor-pointer">
               SHOP <span className="ml-1">▼</span>
             </div> */}
             <Link
               to="/shop"
-              className="flex items-center cursor-pointer text-gray-800 hover:text-gray-600"
+              className="flex hover:underline items-center cursor-pointer text-gray-800 hover:text-gray-600"
               onClick={() => setMenuOpen(false)} // to close mobile menu if open
             >
-              SHOP <span className="ml-1">▼</span>
+              SHOP 
             </Link>
 
-            <div className="flex items-center cursor-pointer">
-              Bulk Buying <span className="ml-1">▼</span>
+            <div className="flex items-center hover:underline cursor-pointer">
+              Bulk Buying 
             </div>
-            <span className="cursor-pointer">GIFTING</span>
+            <span className="cursor-pointer hover:underline">GIFTING</span>
           </div>
 
           {/* Center Logo Image */}
           <div className="flex justify-center items-center">
             <img
-              src="/images/mainLogo.png" // <-- replace with your actual logo image path
+              src="/images/mainLogo.png" // 
               alt="chautari sweets Logo"
-              className="w-18  object-contain"
+              className="w-25  object-contain"
             />
           </div>
 
           {/* Right Links */}
-          <div className="hidden md:flex space-x-6 text-sm font-medium text-gray-800 items-center">
+          <div className="hidden md:flex space-x-6 text-[17px] font-medium text-gray-800 items-center">
             <div className="flex items-center cursor-pointer">
-              MY ACCOUNT & MORE <span className="ml-1">▼</span>
+              MY ACCOUNT & MORE <span className="ml-1 hover:underline"></span>
             </div>
             <button>
               <svg
@@ -49,7 +49,7 @@ export default function Navbar() {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-5 h-5"
+                className="w-7 h-7"
               >
                 <path
                   strokeLinecap="round"
@@ -77,16 +77,16 @@ export default function Navbar() {
           <div className="md:hidden flex flex-col space-y-4 mt-4 pb-4 text-sm font-medium text-gray-800">
             <div className="flex justify-between items-center">
               <span>SHOP</span>
-              <span>▼</span>
+              {/* <span>▼</span> */}
             </div>
             <div className="flex justify-between items-center">
               <span>LOCAL ORDERS</span>
-              <span>▼</span>
+              {/* <span>▼</span> */}
             </div>
             <span>GIFTING</span>
             <div className="flex justify-between items-center">
               <span>MY ACCOUNT & MORE</span>
-              <span>▼</span>
+              {/* <span>▼</span> */}
             </div>
             <button className="w-fit">
               <svg

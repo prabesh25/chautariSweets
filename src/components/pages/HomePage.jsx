@@ -8,6 +8,7 @@ import BlogSection from "../others/Blogs";
 import Product from "./Product";
 import ProductAttributes from "../others/ProductAttributes";
 import Journey from "./Journey";
+import InfiniteScroll from "../others/InfiniteScroll";
 
 function HomePage() {
   return (

@@ -20,11 +20,13 @@ import Traditional from "./components/pages/shopping/Traditional";
 import Festive from "./components/pages/shopping/Festive";
 import BadamKatli from "./components/pages/shopping/BadamKatli";
 import GultenFree from "./components/pages/shopping/GlutenFree";
+import InfiniteScroll from "./components/others/InfiniteScroll";
 // import GultenFree from "./components/pages/shopping/GlutenFree";
 
 function App() {
   return (
     <BrowserRouter>
+        <InfiniteScroll/>
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
