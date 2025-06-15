@@ -6,8 +6,8 @@ const VidSection = () => {
       <div className="text-center mb-8">
         <h4 className="text-lg mb-2 text-gray-600">Taste the legacy today!</h4>
         <p className="text-gray-600">
-          Since 1948, our Indian brand has been delighting customers with
-          exquisite mithai, spice powders, namkeens, and tangy pickles.
+          Since 1948, our Indian brand has been delighting customers with 
+          exquisite mithai,<br /> spice powders, namkeens, and tangy pickles.
         </p>
       </div>
 

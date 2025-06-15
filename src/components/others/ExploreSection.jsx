@@ -134,7 +134,7 @@ const ExploreSection = () => {
     <div className="w-full flex flex-col items-center px-4 py-8">
       {/* Heading */}
       <div className="w-full max-w-2xl text-center mb-8">
-        <h4 className="text-lg text-gray-600 mb-2">
+        <h4 className="text-3xl font-bold text-gray-600 mb-2">
           A Sweet Tradition Collections
         </h4>
         <p className="text-gray-600">
