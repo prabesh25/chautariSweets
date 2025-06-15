@@ -7,10 +7,10 @@ export default function Navbar() {
 
   return (
     <header className="bg-[#fefaf6] w-full h-25 shadow-sm sticky top-0 z-50">
-      <nav className="mx-auto px-4 sm:px-6 lg:px-8">
+      <nav className="mx-auto px-4  lg:px-8">
         <div className="flex justify-between  items-center h-25">
           {/* Left Links */}
-          <div className="hidden md:flex  space-x-6 text-[17px] font-medium text-gray-800">
+          <div className="hidden md:flex space-x-6 text-[17px] font-medium text-gray-800">
             {/* <div className="flex items-center cursor-pointer">
               SHOP <span className="ml-1">▼</span>
             </div> */}
@@ -22,20 +22,29 @@ export default function Navbar() {
               SHOP 
             </Link>
 
-            <div className="flex items-center hover:underline cursor-pointer">
+            <Link to="/bulkbuy" className="flex items-center hover:underline cursor-pointer" >
+            Bulk Buying
+            </Link>
+
+            <Link to="/gifting" className="flex items-center hover:underline cursor-pointer" >
+             Gifting
+            </Link>
+
+            {/* <div className="flex items-center hover:underline cursor-pointer">
               Bulk Buying 
-            </div>
-            <span className="cursor-pointer hover:underline">GIFTING</span>
+            </div> */}
+            {/* <span className="cursor-pointer hover:underline">GIFTING</span> */}
           </div>
 
           {/* Center Logo Image */}
-          <div className="flex justify-center items-center">
-            <img
+           <Link to="/" className="flex justify-center items-center" >
+ <img
               src="/images/mainLogo.png" // 
               alt="chautari sweets Logo"
               className="w-25  object-contain"
-            />
-          </div>
+            />            </Link>
+
+          
 
           {/* Right Links */}
           <div className="hidden md:flex space-x-6 text-[17px] font-medium text-gray-800 items-center">
@@ -74,19 +83,16 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="md:hidden flex flex-col space-y-4 mt-4 pb-4 text-sm font-medium text-gray-800">
+          <div className="md:hidden flex bg-white flex-col space-y-4  pb-4 text-sm font-medium text-gray-800">
             <div className="flex justify-between items-center">
               <span>SHOP</span>
-              {/* <span>▼</span> */}
             </div>
             <div className="flex justify-between items-center">
               <span>LOCAL ORDERS</span>
-              {/* <span>▼</span> */}
             </div>
             <span>GIFTING</span>
             <div className="flex justify-between items-center">
               <span>MY ACCOUNT & MORE</span>
-              {/* <span>▼</span> */}
             </div>
             <button className="w-fit">
               <svg

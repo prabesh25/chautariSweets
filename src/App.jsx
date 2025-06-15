@@ -26,7 +26,7 @@ import InfiniteScroll from "./components/others/InfiniteScroll";
 function App() {
   return (
     <BrowserRouter>
-        <InfiniteScroll/>
+      <InfiniteScroll />
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -34,7 +34,9 @@ function App() {
         <Route path="/gifting" element={<Gifting />} />
         <Route path="/my account" element={<MyAccount />} />
         <Route path="/product" element={<Product />} />
-        <Route path="/form" element={<BulkOrderForm />} />
+        <Route path="/bulkbuy" element={<BulkOrderForm />} />
+                {/* <Route path="/bulk buy" element={<BulkOrderForm />} /> */}
+
         <Route path="/our story" element={<OurStory />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/shop/sugarfreesweets" element={<SugarFreeSweets />} />

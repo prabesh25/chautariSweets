@@ -1,53 +1,55 @@
-
-import React from 'react';
-import { Star } from 'lucide-react';
+import React from "react";
+import { Star } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const products = [
   {
     id: 1,
-    name: 'Kaju Katli',
+    name: "Kaju Katli",
     price: 550,
-    image: '/images/01.jpg',
+    image: "/images/01.jpg",
     rating: 4.8,
   },
   {
     id: 2,
-    name: 'Dry Fruit Laddu',
+    name: "Dry Fruit Laddu",
     price: 460,
-    image: '/images/02.png',
+    image: "/images/02.png",
     rating: 4.6,
   },
   {
     id: 3,
-    name: 'Kaju Katli',
+    name: "Kaju Katli",
     price: 550,
-    image: '/images/01.jpg',
+    image: "/images/01.jpg",
     rating: 4.8,
   },
   {
     id: 4,
-    name: 'Dry Fruit Laddu',
+    name: "Dry Fruit Laddu",
     price: 460,
-    image: '/images/02.png',
+    image: "/images/02.png",
     rating: 4.6,
   },
   {
     id: 5,
-    name: 'Kaju Katli',
+    name: "Kaju Katli",
     price: 550,
-    image: '/images/01.jpg',
+    image: "/images/01.jpg",
     rating: 4.8,
   },
   {
     id: 6,
-    name: 'Dry Fruit Laddu',
+    name: "Dry Fruit Laddu",
     price: 460,
-    image: '/images/02.png',
+    image: "/images/02.png",
     rating: 4.6,
   },
 ];
 
 const DryFruits = () => {
+  const navigate = useNavigate(); 
+
   return (
     <div className="w-full overflow-hidden">
       {/* Changed from absolute to inline-block and removed positioning */}
@@ -57,8 +59,9 @@ const DryFruits = () => {
       <div className="flex flex-wrap w-full">
         {products.map((item) => (
           <div
+            onClick={() => navigate('/product')}
             key={item.id}
-            className="w-1/2 p-5 relative group overflow-hidden flex flex-col"
+            className="w-1/2 cursor-pointer p-5 relative group overflow-hidden flex flex-col"
           >
             {/* Full screen image container */}
             <div className="flex-1 rounded-3xl overflow-hidden">

@@ -1,6 +1,8 @@
 
 import React from 'react';
 import { Star } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+
 
 const products = [
   {
@@ -48,6 +50,8 @@ const products = [
 ];
 
 const Traditional = () => {
+    const navigate = useNavigate();
+
   return (
     <div className="w-full overflow-hidden">
       {/* Changed from absolute to inline-block and removed positioning */}
@@ -57,8 +61,10 @@ const Traditional = () => {
       <div className="flex flex-wrap w-full">
         {products.map((item) => (
           <div
+                      onClick={() => navigate('/product')}
+
             key={item.id}
-            className="w-1/2 p-5 relative group overflow-hidden flex flex-col"
+            className="w-1/2 cursor-pointer p-5 relative group overflow-hidden flex flex-col"
           >
             {/* Full screen image container */}
             <div className="flex-1 rounded-3xl overflow-hidden">

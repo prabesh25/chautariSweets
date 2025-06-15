@@ -188,7 +188,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Shop = () => {
   const navigate = useNavigate();
-  const [currentProduct, setCurrentProduct] = useState(0);
+  // const [currentProduct, setCurrentProduct] = useState(0);
 
   const menuItems = [
     { id: 1, name: 'SugarFreeSweets', image: '/images/01.jpg', path: '/shop/sugarfreesweets' },
@@ -201,22 +201,22 @@ const Shop = () => {
     { id: 8, name: 'Badam Katli', image: '/images/08.png', path: '/shop/badamkatli' },
   ];
 
-  const nextProduct = () => {
-    setCurrentProduct((prev) => (prev === menuItems.length - 1 ? 0 : prev + 1));
-  };
+  // const nextProduct = () => {
+  //   setCurrentProduct((prev) => (prev === menuItems.length - 1 ? 0 : prev + 1));
+  // };
 
-  const prevProduct = () => {
-    setCurrentProduct((prev) => (prev === 0 ? menuItems.length - 1 : prev - 1));
-  };
+  // const prevProduct = () => {
+  //   setCurrentProduct((prev) => (prev === 0 ? menuItems.length - 1 : prev - 1));
+  // };
 
   return (
     <div className="p-5 max-w-7xl mx-auto">
-      {/* Heading */}
+      {/* Heading*/}
       <h2 className="text-3xl text-center font-bold text-gray-800 mb-10 relative after:content-[''] after:block after:w-20 after:h-1 after:bg-amber-500 after:mx-auto after:mt-2">
         Shop Categories
       </h2>
 
-      {/* Categories Grid */}
+      {/* Categories Grid*/}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
         {menuItems.map((item) => (
           <div
@@ -224,7 +224,7 @@ const Shop = () => {
             onClick={() => navigate(item.path)}
             className="cursor-pointer rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 bg-white"
           >
-            <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-40 overflow-hidden">
+            <div className="bg-gray-200  rounded-xl w-full h-40 overflow-hidden">
               <img
                 src={item.image}
                 alt={item.name}
